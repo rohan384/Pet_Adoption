@@ -1,0 +1,17 @@
+<!-- pet_adoptions/templates/pet_adoptions/adoption_success.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Success</title>
+</head>
+<body>
+    <h2>Congratulations!</h2>
+    <p>{{ adoption_record.adopter_name }} has successfully adopted {{ adoption_record.pet_adopted.name }}.</p>
+    <p>Contact Information: {{ adoption_record.contact_information }}</p>
+    <p>email: {{ adoption_record.email }}</p>
+    <p>Adoption Date: {{ adoption_record.adoption_date }}</p>
+</body>
+</html>

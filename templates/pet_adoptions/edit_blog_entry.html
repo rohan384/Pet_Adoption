@@ -1,0 +1,17 @@
+<!-- pet_adoptions/templates/pet_adoptions/edit_blog_entry.html -->
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'add_blog.css' %}">
+<div class="container">
+  <div class="form-container">
+  <h2>Edit Blog Entry</h2>
+  <form method="post" action="{% url 'edit_blog_entry' entry.id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <center>
+    <button type="submit">Save Changes</button></center>
+  </form>
+</div>
+</div>
+{% endblock %}

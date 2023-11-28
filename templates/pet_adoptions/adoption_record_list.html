@@ -1,0 +1,11 @@
+<!-- pet_adoptions/templates/pet_adoptions/adoption_record_list.html -->
+{% extends 'home.html' %}
+
+{% block content %}
+  <h2>Adoption Records</h2>
+  <ul>
+    {% for record in adoption_records %}
+      <li>{{ record.adopter_name }} adopted {{ record.pet_adopted.name }} on {{ record.adoption_date }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

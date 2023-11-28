@@ -1,0 +1,22 @@
+<!-- pet_detail.html -->
+{% extends 'home.html' %}
+
+{% block content %}
+  <h2>{{ pet.name }}</h2>
+  {% if pet.image %}
+            <img src="{{ pet.image.url }}" alt="{{ pet.name }} Image" style="max-width: 200px; max-height: 200px;">
+          {% endif %}
+  <p>Species: {{ pet.species }}</p>
+  <p>Breed: {{ pet.breed }}</p>
+  <p>Age: {{ pet.age }}</p>
+  <p>Gender: {{ pet.gender }}</p>
+  <p>Description: {{ pet.description }}</p>
+  <p>Status: {% if pet.adoption_status %} Adopted {% else %} Available {% endif %}</p>
+  <p>
+    {% if pet.adoption_status %}
+      <strong>This pet has already been adopted</strong>
+    {% else %}
+      <a href="{% url 'adoption_form' pet.id %}">Adopt this pet</a>
+    {% endif %}
+  </p>
+{% endblock %}

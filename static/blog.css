@@ -1,0 +1,63 @@
+/* Add your custom styles here */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar {
+    background-color: #343a40 !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    border-color: #fff;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.blog-entry {
+    margin-bottom: 30px;
+}
+
+.blog-entry h3 {
+    color: #343a40;
+}
+
+.blog-entry p {
+    color: #555;
+}
+
+.blog-entry a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-entry a:hover {
+    text-decoration: underline;
+}
+
+.add-blog-entry {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.add-blog-entry:hover {
+    background-color: #218838;
+}

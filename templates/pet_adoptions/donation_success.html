@@ -1,0 +1,14 @@
+<!-- pet_adoptions/templates/pet_adoptions/donation_success.html -->
+{% extends 'home.html' %}
+
+{% block content %}
+  <h2>Thank You for Your Donation!</h2>
+  <p>Your pet has been successfully donated. Here are the details:</p>
+  <ul>
+    <li>Name: {{ new_pet.name }}</li>
+    <li>Species: {{ new_pet.species }}</li>
+    <li>Breed: {{ new_pet.breed }}</li>
+    <!-- Add other details as needed -->
+  </ul>
+  <!-- You can customize this template based on your needs -->
+{% endblock %}
